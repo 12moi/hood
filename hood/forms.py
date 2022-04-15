@@ -29,6 +29,11 @@ class BusinessForm(forms.ModelForm):
         model = Business
         exclude = ('user', 'neighbourhood')
 
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        exclude = ('user', 'hood')
+
 # <p class="font-weight-bold ml-5 mt-3 pb-1">Or Register in with</p>
 #                 <span>
 #                 <a href="{% url 'social:begin' 'google-oauth2' %}"><button type="button" class="login-with-google-btn ml-5 mb-1" >Continue with Google</button></a>
