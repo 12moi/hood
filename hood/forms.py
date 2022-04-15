@@ -34,9 +34,5 @@ class PostForm(forms.ModelForm):
         model = Post
         exclude = ('user', 'hood')
 
-# <p class="font-weight-bold ml-5 mt-3 pb-1">Or Register in with</p>
-#                 <span>
-#                 <a href="{% url 'social:begin' 'google-oauth2' %}"><button type="button" class="login-with-google-btn ml-5 mb-1" >Continue with Google</button></a>
-#                 <a href="{% url 'social:begin' 'facebook' %}"><button class="loginBtn loginBtn--facebook ml-5 mb-1">Continue Facebook</button></a>
-#                 </span>
+
 
