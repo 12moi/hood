@@ -24,9 +24,13 @@
     <title>Hood</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" style="display: flex;
+    align-items: stretch;">
         {% include 'bar.html' %}
-        <div id="content" >
+        <div id="content" style="width: 100%;
+        padding-left: 0px;
+        min-height: 100vh;
+        transition: all 0.3s;">
         {% include 'navbar.html' %}
 
           {% block content %}
